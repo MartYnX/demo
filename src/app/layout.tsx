@@ -2,17 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: {
-    absolute: "",
-    default: "Demo",
-    template: "%s | demo",
-  },
-  description: 'The moon',
   openGraph: {
-    title: "Demo | Build and Ship Software",
-    description: "Join millions of developers building and shipping software on a collaborative platform.",
+    siteName: "Demo",
+    title: "Moon | Demo",
+    description: "The moon",
     url: "https://monsiteweb.com",
-    siteName: "MonSiteWeb",
     images: [
       {
         url: "/shadu.png", // Remplacez par l'URL de votre image
