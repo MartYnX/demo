@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import './pages.css';
 
 const Moon = () => {
     const mountRef = useRef<HTMLDivElement>(null);
