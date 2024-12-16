@@ -15,6 +15,9 @@ export default function Home() {
       <Link href="/moon">
         <button>Voir la Lune</button>
       </Link>
+      <Link href="/glitch">
+        <button>???</button>
+      </Link>
       <div className='nocopy'>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quaerat omnis atque. Id repellat molestiae sequi autem tempora consectetur voluptatibus pariatur, maxime, aliquid laborum debitis cupiditate eos ipsum dignissimos vel.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi delectus facilis culpa impedit ad, voluptatem fuga odit ab autem reiciendis nisi nostrum, facere consectetur est eos, beatae perferendis unde.</p>
