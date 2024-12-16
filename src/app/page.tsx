@@ -1,7 +1,11 @@
-import Moon from "./demo/moon";
+import Moon from "./demo/moon/moon";
+import Glitch from "./demo/glitch/glitch";
 
 export default function Home() {
   return (
-    <Moon />
+    <div>
+      {/* <Moon /> */}
+      <Glitch />
+    </div>
   );
 }
