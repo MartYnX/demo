@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  title: {
+    absolute: "",
+    default: "Demo",
+    template: "%s | demo",
+  },
   openGraph: {
     siteName: "Demo",
     title: "Moon | Demo",
