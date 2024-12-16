@@ -3,13 +3,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Menu",
+    absolute: "",
+    default: "Demo | Menu",
     template: "Demo | %s",
   },
   openGraph: {
     siteName: "Demo",
     title: "Demo | Menu",
-    description: "The moon",
+    description: "Few demo of what we can do with a nextJS project.",
     url: "https://demo-beta-woad.vercel.app/",
     images: [
       {

@@ -2,9 +2,7 @@ import { Metadata } from 'next';
 import Moon from './moon';
 
 export const metadata: Metadata = {
-    title: {
-        absolute: 'Moon'
-    }
+    title: 'Moon'
 }
 
 const Space = () => {
