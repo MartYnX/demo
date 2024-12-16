@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     siteName: "Demo",
     title: "Moon | Demo",
     description: "The moon",
-    url: "https://monsiteweb.com",
+    url: "https://demo-beta-woad.vercel.app/",
     images: [
       {
         url: "/shadu.png", // Remplacez par l'URL de votre image
