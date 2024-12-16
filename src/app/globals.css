@@ -7,3 +7,11 @@ canvas {
   height: 100%;
   vertical-align: bottom
 }
+
+.nocopy {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
+}
