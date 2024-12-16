@@ -1,9 +1,12 @@
-import Moon from "./demo/moon";
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div>
-      <Moon />
+      <h1>Bienvenue sur la page d'accueil</h1>
+            <Link href="/moon">
+                <button>Voir la Lune</button>
+            </Link>
     </div>
   );
 }

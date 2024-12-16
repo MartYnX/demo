@@ -3,6 +3,14 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import './pages.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: {
+        absolute: 'Moon'
+    }
+}
 
 const Moon = () => {
     const mountRef = useRef<HTMLDivElement>(null);

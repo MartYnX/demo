@@ -3,13 +3,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "",
-    default: "Demo",
-    template: "%s | demo",
+    default: "Menu",
+    template: "Demo | %s",
   },
   openGraph: {
     siteName: "Demo",
-    title: "Moon | Demo",
+    title: "Demo | Menu",
     description: "The moon",
     url: "https://demo-beta-woad.vercel.app/",
     images: [
