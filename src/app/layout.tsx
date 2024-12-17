@@ -2,6 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  generator: 'Next.js',
+  applicationName: 'Demo',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Next.js', 'JavaScript', 'Typescript', 'Template'],
+  authors: [
+    { name: 'MartYnX', url: 'https://github.com/MartYnX' },
+  ],
+  creator: 'MartYnX',
+  publisher: 'MartYnX',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+
   metadataBase: new URL("https://demo-kohl-ten.vercel.app/"),
   title: {
     default: "Demo | Menu",
@@ -28,24 +43,14 @@ export const metadata: Metadata = {
     type: "website",
   },
 
-
-  robots: {
-    index: true, // Indique si les moteurs de recherche doivent
-    follow: true, // Indique si les moteurs de recherche doivent suivre les liens sur la page
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1, // Pas de limite pour l'aperçu vidéo
-      'max-image-preview': 'large', // Utiliser une grande image pour l'aperçu
-      'max-snippet': -1, // Pas de limite pour les extraits
-    },
-  },
   twitter: {
     title: {
       absolute: "",
       default: "Demo | Menu",
       template: "Demo | %s"
     },
+    description: 'Few demo of what we can do with a nextJS project.',
+    creator: 'MartYnX',
     card: "summary_large_image",
     images: ["/shadu.png"],
   },
@@ -53,6 +58,22 @@ export const metadata: Metadata = {
     width: "device-width", // Définit la largeur du viewport à celle de l'appareil
     initialScale: 1, // Définit le niveau de zoom initial
   },
+
+
+  robots: {
+    index: true, // Indique si les moteurs de recherche doivent
+    follow: true, // Indique si les moteurs de recherche doivent suivre les liens sur la page
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      'max-video-preview': -1, // Pas de limite pour l'aperçu vidéo
+      'max-image-preview': 'large', // Utiliser une grande image pour l'aperçu
+      'max-snippet': -1, // Pas de limite pour les extraits
+    },
+  },
+
   verification: {
     google: "-C2AOMlMFUCju845ukk7pHM9Zhc09AYCekdn6gmjJfk",
   },
