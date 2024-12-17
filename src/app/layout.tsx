@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://demo-beta-woad.vercel.app"),
   title: {
     absolute: "",
     default: "Demo | Menu",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         url: "/shadu.png", // Remplacez par l'URL de votre image
         width: 1200,
         height: 630,
-        alt: "Image de prévisualisation pour MonSiteWeb",
+        alt: "Preview image for my website",
       },
     ],
     locale: "en_US",
