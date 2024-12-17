@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 
   metadataBase: new URL("https://demo-kohl-ten.vercel.app/"),
   title: {
+    absolute: "",
     default: "Demo | Menu",
     template: "Demo | %s",
   },
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Demo",
     title: {
+      absolute: "",
       default: "Demo | Menu",
       template: "Demo | %s"
     },
