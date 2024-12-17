@@ -2,29 +2,29 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  generator: 'Next.js',
+  generator: 'Next.js', // Specifies the generator of the page
   applicationName: 'Demo',
-  referrer: 'origin-when-cross-origin',
-  keywords: ['Next.js', 'JavaScript', 'Typescript', 'Template'],
+  referrer: 'origin-when-cross-origin', // Controls the Referer HTTP header
+  keywords: ['Next.js', 'JavaScript', 'Typescript', 'Template'], // Keywords for search engine optimization
   authors: [
     { name: 'MartYnX', url: 'https://github.com/MartYnX' },
   ],
   creator: 'MartYnX',
   publisher: 'MartYnX',
-  formatDetection: {
+  formatDetection: { // Controls browser's feature detection for phone numbers, email addresses, etc.
     email: false,
     address: false,
     telephone: false,
   },
 
-  metadataBase: new URL("https://demo-kohl-ten.vercel.app/"),
-  title: {
+  metadataBase: new URL("https://demo-kohl-ten.vercel.app/"), // Base URL for relative URLs in metadata
+  title: { // Page title configuration (in internet tab)
     absolute: "",
     default: "Demo | Menu",
     template: "Demo | %s",
   },
   description: "Few demo of what we can do with a nextJS project.",
-  openGraph: {
+  openGraph: { // Open Graph metadata for rich object in social sharing
     siteName: "Demo",
     title: {
       absolute: "",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 
-  twitter: {
+  twitter: {// Twitter Card metadata for Twitter sharing
     title: {
       absolute: "",
       default: "Demo | Menu",
@@ -56,44 +56,47 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/shadu.png"],
   },
-  viewport: {
-    width: "device-width", // Définit la largeur du viewport à celle de l'appareil
-    initialScale: 1, // Définit le niveau de zoom initial
+  viewport: { // Viewport settings for responsive design
+    width: "device-width", // Sets the viewport width to the device
+    initialScale: 1, // Sets the initial zoom level
   },
 
 
-  robots: {
-    index: true, // Indique si les moteurs de recherche doivent
-    follow: true, // Indique si les moteurs de recherche doivent suivre les liens sur la page
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: true,
-      'max-video-preview': -1, // Pas de limite pour l'aperçu vidéo
-      'max-image-preview': 'large', // Utiliser une grande image pour l'aperçu
-      'max-snippet': -1, // Pas de limite pour les extraits
+  robots: { // Instructions for search engine crawlers
+    index: true, // Allows search engines to index this page
+    follow: true, // Allows search engines to follow links on this page
+    nocache: true, // Instructs search engines not to cache this page
+
+    googleBot: { // Specific instructions for Google's web crawler
+      index: true, // Allows Google to index this page
+      follow: true, // Allows Google to follow links on this page
+      noimageindex: true, // Prevents Google from indexing images on this page
+      'max-video-preview': -1, // Sets no limit on the length of video previews (-1 means no limit)
+      'max-image-preview': 'large', // Allows large image previews in search results
+      'max-snippet': -1, // Sets no limit on the length of text snippets in search results
     },
   },
 
-  verification: {
-    google: "-C2AOMlMFUCju845ukk7pHM9Zhc09AYCekdn6gmjJfk",
+  verification: { // Verification tokens for search engines
+    google: "-C2AOMlMFUCju845ukk7pHM9Zhc09AYCekdn6gmjJfk", // https://search.google.com/search-console/about
+    yandex: 'your yandex token',
+    yahoo: 'your yahoo token',
   },
 
 
-  icons: {
+  icons: { // Favicon configuration (in internet tab)
     icon: [
       {
         rel: 'icon',
+        url: '/paw.svg',
         type: 'image/png',
         media: '(prefers-color-scheme: light)',
-        url: '/paw.svg',
       },
       {
         rel: 'icon',
+        url: '/paw.svg',
         type: 'image/png',
         media: '(prefers-color-scheme: dark)',
-        url: '/paw.svg'
       }
     ]
   },
