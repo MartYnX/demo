@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
+
 
 export default function Home() {
 
@@ -25,11 +27,15 @@ export default function Home() {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias cum voluptatem, a nulla ut dolore atque mollitia. Sit laudantium, est, illo consequuntur, cumque quaerat odit debitis tenetur ea beatae quasi!</p>
       </div>
       <div className='nocopy'>
-        <img
-          src="/shadus.png"
+        <Image
+          src="/shadu.png"
           alt="Image exemple"
-          width={400}
-          // height={300}
+          width={1000} // give the resolution of pic, not the size
+          height={1000} // same (try to put 0 on both to understand)
+          style={{
+            width: '300px',
+            height: 'auto',
+          }}
           onContextMenu={preventContextMenu}
         />
       </div>

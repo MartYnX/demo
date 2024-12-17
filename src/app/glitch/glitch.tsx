@@ -46,9 +46,6 @@ const Glitch: React.FC = () => {
                 <div></div>
                 <div></div>
             </div>
-            <div className="caps">
-                <img src="http://ademilter.com/caps.png" alt="" />
-            </div>
             <canvas ref={canvasRef} id="canvas"></canvas>
         </div>
     );

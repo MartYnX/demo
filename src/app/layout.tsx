@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Demo",
     title: {
+      absolute: "",
       default: "Demo | Menu",
       template: "Demo | %s"
     },

@@ -11,6 +11,7 @@ const Moon = () => {
     useEffect(() => {
         if (!mountRef.current) return;
 
+        const mount = mountRef.current;
         const textureURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg";
         const displacementURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/ldem_3_8bit.jpg";
         const worldURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/hipp8_s.jpg";
@@ -90,7 +91,9 @@ const Moon = () => {
 
         return () => {
             window.removeEventListener('resize', onResize);
-            mountRef.current?.removeChild(renderer.domElement);
+            if (mount) {
+                mount.removeChild(renderer.domElement);
+            }
         };
     }, []);
 
