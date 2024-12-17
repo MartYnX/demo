@@ -2,15 +2,14 @@ import { Metadata } from 'next';
 import Moon from './moon';
 
 export const metadata: Metadata = {
-    title: 'Moon'
-}
+    title: 'Moon',
+    openGraph: {
+        title: 'Exploring the Moon',
+    },
+};
 
 const Space = () => {
-    return (
-        <div>
-            <Moon />
-        </div>
-    )
+    return <Moon />
 };
 
 export default Space;

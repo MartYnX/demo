@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <div className='nocopy'>
         <img
-          src="/shadu.png"
+          src="/shadus.png"
           alt="Image exemple"
           width={400}
           // height={300}

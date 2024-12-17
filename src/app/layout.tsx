@@ -10,7 +10,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     siteName: "Demo",
-    title: "Demo | Menu",
+    title: {
+      default: "Demo | Menu",
+      template: "Demo | %s"
+    },
     description: "Few demo of what we can do with a nextJS project.",
     url: "https://demo-kohl-ten.vercel.app/",
     images: [
