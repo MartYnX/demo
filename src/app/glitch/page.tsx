@@ -2,6 +2,11 @@
 
 import React, { useEffect, useRef } from 'react';
 import './glitch.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Glitch'
+}
 
 const Glitch: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);

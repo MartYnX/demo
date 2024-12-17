@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://demo-beta-woad.vercel.app"),
+  metadataBase: new URL("https://demo-kohl-ten.vercel.app/"),
   title: {
     absolute: "",
     default: "Demo | Menu",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     siteName: "Demo",
     title: "Demo | Menu",
     description: "Few demo of what we can do with a nextJS project.",
-    url: "https://demo-beta-woad.vercel.app/",
+    url: "https://demo-kohl-ten.vercel.app/",
     images: [
       {
         url: "/shadu.png", // Remplacez par l'URL de votre image
