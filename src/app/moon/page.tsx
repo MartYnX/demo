@@ -2,9 +2,10 @@ import { Metadata } from 'next';
 import Moon from './moon';
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://demo-kohl-ten.vercel.app/moon"),
     title: 'Moon',
     openGraph: {
-        title: 'Exploring the Moon',
+        title: 'Moon',
     },
 };
 

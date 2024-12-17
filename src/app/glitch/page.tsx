@@ -2,7 +2,11 @@ import { Metadata } from 'next';
 import Glitch from './glitch';
 
 export const metadata: Metadata = {
-    title: 'Glitch'
+    metadataBase: new URL("https://demo-kohl-ten.vercel.app/glich"),
+    title: 'Glich',
+    openGraph: {
+        title: 'Glich',
+    },
 };
 
 export default function Layout() {
