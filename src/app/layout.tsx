@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: {
       absolute: "",
       default: "Demo | Menu",
-      template: "Demo | %s"
+      template: "Demo | %s",
     },
     description: "Few demo of what we can do with a nextJS project.",
     url: "https://demo-kohl-ten.vercel.app/",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: {
       absolute: "",
       default: "Demo | Menu",
-      template: "Demo | %s"
+      template: "Demo | %s",
     },
     description: 'Few demo of what we can do with a nextJS project.',
     creator: 'MartYnX',
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
         type: 'image/png',
         media: '(prefers-color-scheme: dark)',
       }
-    ]
+    ],
   },
 };
 
@@ -114,4 +114,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
