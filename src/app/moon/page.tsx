@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Moon',
     },
+    twitter: {
+        title: 'Moon'
+    }
 };
 
 const Space = () => {

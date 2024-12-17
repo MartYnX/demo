@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Glich',
     },
+    twitter: {
+        title: 'Glitch'
+    }
 };
 
 export default function Layout() {
