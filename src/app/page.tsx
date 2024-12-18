@@ -20,9 +20,7 @@ export default function Home() {
       <Link href="/gol">
         <button>game of life</button>
       </Link>
-      <Link href="/fmng">
-        <button>FursuitMakerNameGenerator</button>
-      </Link>
+
       <Link href="/glitch">
         <button>text</button>
       </Link>
