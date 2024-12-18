@@ -1,0 +1,101 @@
+{
+    "contact": {
+        "phone": {
+            "icon": "fa-phone",
+            "value": "(+886)900-000-000"
+        },
+        "address": {
+            "icon": "fa-map-marker",
+            "value": "Taipei, Taiwan"
+        },
+        "email": {
+            "icon": "fa-envelope",
+            "value": "ヽ(*´∀`)@gmail.com"
+        },
+        "website": {
+            "icon": "fa-home",
+            "value": "codepen.io/xichen"
+        }
+    },
+    "skillsProgramming": [
+        {
+            "name": "HTML5 & PUG",
+            "percent": 92,
+            "icon": "fa-code"
+        },
+        {
+            "name": "CSS3 & SASS",
+            "percent": 96,
+            "icon": "fa-code"
+        },
+        {
+            "name": "JavaScript",
+            "percent": 40,
+            "icon": null
+        },
+        {
+            "name": "jQuery",
+            "percent": 60,
+            "icon": null
+        },
+        {
+            "name": "NodeJS",
+            "percent": 33,
+            "icon": null
+        },
+        {
+            "name": "VueJS",
+            "percent": 52,
+            "icon": null
+        },
+        {
+            "name": "PHP",
+            "percent": 20,
+            "icon": null
+        }
+    ],
+    "skillsSoftware": [
+        {
+            "name": "Photoshop",
+            "percent": 94,
+            "icon": null
+        },
+        {
+            "name": "Illustrator",
+            "percent": 80,
+            "icon": null
+        },
+        {
+            "name": "Sublime Text",
+            "percent": 89,
+            "icon": null
+        },
+        {
+            "name": "Dreamweaver",
+            "percent": 55,
+            "icon": null
+        }
+    ],
+    "interests": [
+        {
+            "name": "Draw",
+            "icon": "fa-paint-brush"
+        },
+        {
+            "name": "Guitar",
+            "icon": null
+        },
+        {
+            "name": "Movie",
+            "icon": null
+        },
+        {
+            "name": "Music",
+            "icon": null
+        },
+        {
+            "name": "Game",
+            "icon": null
+        }
+    ]
+}
