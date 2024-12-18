@@ -19,7 +19,7 @@ const adjectives = [
     "shiny", "lazy", "hungry", "dreamy"
 ];
 
-var nouns = [
+const nouns = [
     "dog", "cat", "wolf", "canine", "feline", "bear",
     "lion", "bug", "ghost", "bat", "puppy", "flower",
     "sprout", "angel", "dragon", "cookie", "donut",
@@ -33,14 +33,14 @@ var nouns = [
     "teeth", "spirit", "paw", "island", "coyote"
 ];
 
-var place = [
+const place = [
     "studios", "workshop", "creations", "costumes",
     "suits", "fursuits", "suiting", "productions",
     "works", "arts", "mascots", "critters", "creatures",
     "designs", "labs", "laboratory", "central", "collective",
 ];
 
-var fonts = [
+const fonts = [
     "Bangers", "Creepster", "Fredoka One", "Hanalei Fill", "Lobster",
     "Love Ya Like A Sister", "Luckiest Guy", "Peralta", "Press Start 2P",
     "Shojumaru", "Poppins", "Carter One", "Chewy", "Lemon", "Lily Script One",
