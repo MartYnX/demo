@@ -1,4 +1,7 @@
 {
+    "name": "Kelly Chen",
+    "job": "Front-end Web Designer",
+    "about": "嗨！目前正努力學習中，希望自己的進步及成長能夠被看見，請多指教。喜歡塗鴉、動漫和美好的小事物，歡迎交流 v(´∀｀*v)",
     "contact": {
         "phone": {
             "icon": "fa-phone",
@@ -17,16 +20,62 @@
             "value": "codepen.io/xichen"
         }
     },
+    "follow": [
+        {
+            "icon": "fa-facebook",
+            "link": "javascript:void(0);"
+        },
+        {
+            "icon": "fa-twitter",
+            "link": "javascript:void(0);"
+        },
+        {
+            "icon": "fa-pinterest-p",
+            "link": "javascript:void(0);"
+        },
+        {
+            "icon": "fa-tumblr",
+            "link": "javascript:void(0);"
+        },
+        {
+            "icon": "fa-codepen",
+            "link": "https://codepen.io/xichen/"
+        }
+    ],
+    "workExperience": [
+        {
+            "title": "Front-end Web Designer",
+            "date": "Apr 2016 - Now"
+        },
+        {
+            "title": "Design Assistant",
+            "date": "Mar 2015 - Dec 2015"
+        },
+        {
+            "title": "Design Assistant (Part-time)",
+            "date": "Oct 2014 - Jul 2015"
+        }
+    ],
+    "education": [
+        {
+            "degree": "Department of Information Management",
+            "date": "Set 2010 - Jun 2014"
+        },
+        {
+            "degree": "Department of Data Processing",
+            "date": "Set 2007 - Jun 2010"
+        }
+    ],
     "skillsProgramming": [
         {
             "name": "HTML5 & PUG",
             "percent": 92,
-            "icon": "fa-code"
+            "icon": null
         },
         {
             "name": "CSS3 & SASS",
             "percent": 96,
-            "icon": "fa-code"
+            "icon": null
         },
         {
             "name": "JavaScript",
@@ -83,19 +132,19 @@
         },
         {
             "name": "Guitar",
-            "icon": null
+            "icon": "guitar"
         },
         {
             "name": "Movie",
-            "icon": null
+            "icon": "fa-film"
         },
         {
             "name": "Music",
-            "icon": null
+            "icon": "fa-headphones"
         },
         {
             "name": "Game",
-            "icon": null
+            "icon": "fa-gamepad"
         }
     ]
 }
