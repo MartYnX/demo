@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <h1>Bienvenue sur la page d&apos;accueil</h1>
       <Link href="/moon">
-        <button>Voir la Lune</button>
+        <button>Moon</button>
       </Link>
       <Link href="/gol">
         <button>game of life</button>
@@ -24,7 +24,7 @@ export default function Home() {
         <button>FursuitMakerNameGenerator</button>
       </Link>
       <Link href="/glitch">
-        <button>???</button>
+        <button>text</button>
       </Link>
       <div className='nocopy'>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quaerat omnis atque. Id repellat molestiae sequi autem tempora consectetur voluptatibus pariatur, maxime, aliquid laborum debitis cupiditate eos ipsum dignissimos vel.</p>
