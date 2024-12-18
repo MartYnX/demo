@@ -5,19 +5,23 @@
     "contact": {
         "phone": {
             "icon": "fa-phone",
-            "value": "(+886)900-000-000"
+            "value": "(+886)900-000-000",
+            "classname": "call"
         },
         "address": {
             "icon": "fa-map-marker",
-            "value": "Taipei, Taiwan"
+            "value": "Taipei, Taiwan",
+            "classname": "address"
         },
         "email": {
             "icon": "fa-envelope",
-            "value": "ヽ(*´∀`)@gmail.com"
+            "value": "ヽ(*´∀`)@gmail.com",
+            "classname": "email"
         },
         "website": {
             "icon": "fa-home",
-            "value": "codepen.io/xichen"
+            "value": "codepen.io/xichen",
+            "classname": "website"
         }
     },
     "follow": [

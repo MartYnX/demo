@@ -79,8 +79,8 @@ export default function Resume() {
                 </div>
                 <div className="contact">
                     <h3>Contact</h3>
-                    {Object.entries(data.contact).map(([key, { icon, value }]) => (
-                        <div key={key} className={key}>
+                    {Object.entries(data.contact).map(([key, { icon, value, classname }]) => (
+                        <div key={key} className={classname}>
                             <i className={`fa ${icon}`}></i><span>{value}</span>
                         </div>
                     ))}
