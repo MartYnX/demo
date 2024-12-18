@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 export default function Layout() {
     return (
         <div>
-            <h1>Je de la vie</h1>
             <GameOfLife />
         </div>
     );
