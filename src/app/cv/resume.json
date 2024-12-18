@@ -27,19 +27,19 @@
     "follow": [
         {
             "icon": "fa-facebook",
-            "link": "javascript:void(0);"
+            "link": ""
         },
         {
             "icon": "fa-twitter",
-            "link": "javascript:void(0);"
+            "link": ""
         },
         {
             "icon": "fa-pinterest-p",
-            "link": "javascript:void(0);"
+            "link": ""
         },
         {
             "icon": "fa-tumblr",
-            "link": "javascript:void(0);"
+            "link": ""
         },
         {
             "icon": "fa-codepen",
@@ -132,23 +132,23 @@
     "interests": [
         {
             "name": "Draw",
-            "icon": "fa-paint-brush"
+            "icon": "fa fa-paint-brush"
         },
         {
-            "name": "Guitar",
-            "icon": "guitar"
+            "name": "Informatic",
+            "icon": "fa fa-solid fa-code"
         },
         {
             "name": "Movie",
-            "icon": "fa-film"
+            "icon": "fa fa-film"
         },
         {
             "name": "Music",
-            "icon": "fa-headphones"
+            "icon": "fa fa-headphones"
         },
         {
             "name": "Game",
-            "icon": "fa-gamepad"
+            "icon": "fa fa-gamepad"
         }
     ]
 }

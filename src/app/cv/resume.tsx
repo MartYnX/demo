@@ -95,65 +95,65 @@ export default function Resume() {
                         ))}
                     </div>
                 </div>
-                <div className="func">
-                    <div className="work">
-                        <h3><i className="fa fa-briefcase"></i>Work Exrerience</h3>
-                        <ul>
-                            {data.workExperience.map((job, index) => (
-                                <li key={index}>
-                                    <span>{job.title}</span><small>{job.date}</small>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="edu">
-                        <h3><i className="fa fa-graduation-cap"></i>Education</h3>
-                        <ul>
-                            {data.education.map((edu, index) => (
-                                <li key={index}>
-                                    <span>{edu.degree}</span><small>{edu.date}</small>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="skills-prog">
-                        <h3><i className="fa fa-code"></i>Programming Skills</h3>
-                        <ul>
-                            {data.skillsProgramming.map((skill, index) => (
-                                <li key={index} data-percent={skill.percent}>
-                                    <span>{skill.name}</span>
-                                    <div className="skills-bar">
-                                        <div className="bar"></div>
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="skills-soft">
-                        <h3><i className="fa fa-th-list"></i>Software Skills</h3>
-                        <ul>
-                            {data.skillsSoftware.map((software, index) => (
-                                <li key={index} data-percent={software.percent}>
-                                    {/* SVG for circular progress */}
-                                    <svg viewBox="0 0 100 100">
-                                        <circle cx="50" cy="50" r="45"></circle>
-                                        <circle className="cbar" cx="50" cy="50" r="45"></circle>
-                                    </svg><span>{software.name}</span><small></small>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="interests">
-                        <h3><i className="fa fa-star"></i>Interests</h3>
-                        <div className="interests-items">
-                            {data.interests.map((interest, index) => (
-                                <div key={index} className={interest.name.toLowerCase()}>
-                                    {interest.icon &&
-                                        (<i className={`fa ${interest.icon}`}></i>)}
-                                    <span>{interest.name}</span>
+            </div>
+            <div className="func">
+                <div className="work">
+                    <h3><i className="fa fa-briefcase"></i>Work Exrerience</h3>
+                    <ul>
+                        {data.workExperience.map((job, index) => (
+                            <li key={index}>
+                                <span>{job.title}</span><small>{job.date}</small>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="edu">
+                    <h3><i className="fa fa-graduation-cap"></i>Education</h3>
+                    <ul>
+                        {data.education.map((edu, index) => (
+                            <li key={index}>
+                                <span>{edu.degree}</span><small>{edu.date}</small>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="skills-prog">
+                    <h3><i className="fa fa-code"></i>Programming Skills</h3>
+                    <ul>
+                        {data.skillsProgramming.map((skill, index) => (
+                            <li key={index} data-percent={skill.percent}>
+                                <span>{skill.name}</span>
+                                <div className="skills-bar">
+                                    <div className="bar"></div>
                                 </div>
-                            ))}
-                        </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="skills-soft">
+                    <h3><i className="fa fa-th-list"></i>Software Skills</h3>
+                    <ul>
+                        {data.skillsSoftware.map((software, index) => (
+                            <li key={index} data-percent={software.percent}>
+                                {/* SVG for circular progress */}
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45"></circle>
+                                    <circle className="cbar" cx="50" cy="50" r="45"></circle>
+                                </svg><span>{software.name}</span><small></small>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="interests">
+                    <h3><i className="fa fa-star"></i>Interests</h3>
+                    <div className="interests-items">
+                        {data.interests.map((interest, index) => (
+                            <div key={index} className={interest.name.toLowerCase()}>
+                                {interest.icon &&
+                                    (<i className={`${interest.icon}`}></i>)}
+                                <span>{interest.name}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
