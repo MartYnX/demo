@@ -17,6 +17,9 @@ export default function Home() {
       <Link href="/moon">
         <button>Voir la Lune</button>
       </Link>
+      <Link href="/gol">
+        <button>game of life</button>
+      </Link>
       <Link href="/glitch">
         <button>???</button>
       </Link>
