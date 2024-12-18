@@ -67,7 +67,7 @@ export default function Resume() {
         <div className="resume">
             <div className="base">
                 <div className="profile">
-                    <div className="photo"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/764024/profile/profile-512.jpg" /></div>
+                    <div className="photo"><img src={data.picture} /></div>
                     <div className="info">
                         <h4 className="name">{data.name}</h4>
                         <small className="job">{data.job}</small>

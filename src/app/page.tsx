@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <div className='nocopy'>
         <Image
-          src="/shadus.png"
+          src="/gangle.png"
           alt="Image exemple"
           width={1000} // give the resolution of pic, not the size
           height={1000} // same (try to put 0 on both to understand)

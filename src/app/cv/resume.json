@@ -1,49 +1,50 @@
 {
-    "name": "Kelly Chen",
-    "job": "Front-end Web Designer",
-    "about": "嗨！目前正努力學習中，希望自己的進步及成長能夠被看見，請多指教。喜歡塗鴉、動漫和美好的小事物，歡迎交流 v(´∀｀*v)",
+    "name": "Your name",
+    "job": "Your job",
+    "about": "Say something about you v(´∀｀*v)",
+    "picture": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/764024/profile/profile-512.jpg",
     "contact": {
         "phone": {
+            "value": "01 02 03 04 05",
             "icon": "fa-phone",
-            "value": "(+886)900-000-000",
             "classname": "call"
         },
         "address": {
+            "value": "Your location/adress",
             "icon": "fa-map-marker",
-            "value": "Taipei, Taiwan",
             "classname": "address"
         },
         "email": {
+            "value": "example@gmail.com",
             "icon": "fa-envelope",
-            "value": "ヽ(*´∀`)@gmail.com",
             "classname": "email"
         },
         "website": {
+            "value": "any website ?",
             "icon": "fa-home",
-            "value": "codepen.io/xichen",
             "classname": "website"
         }
     },
     "follow": [
         {
-            "icon": "fa-facebook",
-            "link": ""
+            "link": "https://fontawesome.com/icons",
+            "icon": "fa-facebook"
         },
         {
-            "icon": "fa-twitter",
-            "link": ""
+            "link": "https://fontawesome.com/icons",
+            "icon": "fa-twitter"
         },
         {
-            "icon": "fa-pinterest-p",
-            "link": ""
+            "link": "https://fontawesome.com/icons",
+            "icon": "fa-pinterest-p"
         },
         {
-            "icon": "fa-tumblr",
-            "link": ""
+            "link": "https://fontawesome.com/icons",
+            "icon": "fa-tumblr"
         },
         {
-            "icon": "fa-codepen",
-            "link": "https://codepen.io/xichen/"
+            "link": "https://codepen.io/xichen/",
+            "icon": "fa-codepen"
         }
     ],
     "workExperience": [
@@ -73,70 +74,59 @@
     "skillsProgramming": [
         {
             "name": "HTML5 & PUG",
-            "percent": 92,
-            "icon": null
+            "percent": 92
         },
         {
             "name": "CSS3 & SASS",
-            "percent": 96,
-            "icon": null
+            "percent": 96
         },
         {
             "name": "JavaScript",
-            "percent": 40,
-            "icon": null
+            "percent": 40
         },
         {
             "name": "jQuery",
-            "percent": 60,
-            "icon": null
+            "percent": 60
         },
         {
             "name": "NodeJS",
-            "percent": 33,
-            "icon": null
+            "percent": 33
         },
         {
             "name": "VueJS",
-            "percent": 52,
-            "icon": null
+            "percent": 52
         },
         {
             "name": "PHP",
-            "percent": 20,
-            "icon": null
+            "percent": 20
         }
     ],
     "skillsSoftware": [
         {
             "name": "Photoshop",
-            "percent": 94,
-            "icon": null
+            "percent": 94
         },
         {
             "name": "Illustrator",
-            "percent": 80,
-            "icon": null
+            "percent": 80
         },
         {
             "name": "Sublime Text",
-            "percent": 89,
-            "icon": null
+            "percent": 89
         },
         {
             "name": "Dreamweaver",
-            "percent": 55,
-            "icon": null
+            "percent": 55
         }
     ],
     "interests": [
         {
-            "name": "Draw",
-            "icon": "fa fa-paint-brush"
+            "name": "Windows",
+            "icon": "fa fa-brands fa-windows"
         },
         {
-            "name": "Informatic",
-            "icon": "fa fa-solid fa-code"
+            "name": "Linux",
+            "icon": "fa fa-brands fa-linux"
         },
         {
             "name": "Movie",
