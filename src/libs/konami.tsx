@@ -1,11 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 const KonamiCode = () => {
-    const [keysPressed, setKeysPressed] = useState<number[]>([]);
-    const [isCorrect, setIsCorrect] = useState(false);
     const router = useRouter();
-
     const correctCombination = [
         38, // Up
         38, // Up
@@ -19,25 +16,23 @@ const KonamiCode = () => {
         65, // A
     ];
 
+    let keysPressed: number[] = [];
+
     const handleKeyUp = (event: KeyboardEvent) => {
-        setKeysPressed((prev) => {
-            const newKeys = [...prev, event.keyCode];
+        keysPressed.push(event.keyCode);
 
-            // Check if the current sequence is correct so far
-            const isSequenceCorrect = newKeys.every((key, index) => key === correctCombination[index]);
+        // Check if the current sequence is correct so far
+        const isSequenceCorrect = keysPressed.every((key, index) => key === correctCombination[index]);
 
-            if (isSequenceCorrect) {
-                if (newKeys.length === correctCombination.length) {
-                    setIsCorrect(true);
-                    console.log("Konami Code activated!");
-                    router.push("https://portfoliojulienlegrand.vercel.app/");
-                }
-                return newKeys;
-            } else {
-                setIsCorrect(false);
-                return [];
+        if (isSequenceCorrect) {
+            if (keysPressed.length === correctCombination.length) {
+                console.log("Konami Code activated!");
+                router.push("https://portfoliojulienlegrand.vercel.app/"); // Redirect to the specified URL
+                keysPressed = []; // Reset keysPressed after success
             }
-        });
+        } else {
+            keysPressed = []; // Reset keysPressed if incorrect
+        }
     };
 
     useEffect(() => {
