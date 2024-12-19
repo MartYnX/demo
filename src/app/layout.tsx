@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import KonamiCode from '@/libs/konami';
 
 export const metadata: Metadata = {
   generator: 'Next.js', // Specifies the generator of the page
@@ -111,7 +110,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <KonamiCode />
         {children}
       </body>
     </html>
