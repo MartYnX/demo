@@ -1,10 +1,8 @@
 'use client'
 
 import { useEffect, useCallback, useRef } from 'react';
-import { useRouter } from 'next/router';
 
 const KonamiCode = () => {
-    const router = useRouter();
 
     const keysPressedRef = useRef<string[]>([]); // useRef to persist the keysPressed array
 
@@ -37,7 +35,7 @@ const KonamiCode = () => {
         } else {
             keysPressedRef.current = []; // Reset the keysPressed array if incorrect
         }
-    }, [router]);  // No need to add correctCombination here anymore
+    }, []);  // No need to add correctCombination here anymore
 
     useEffect(() => {
         const keyUpListener = (event: KeyboardEvent) => handleKeyUp(event);
