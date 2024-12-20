@@ -1,41 +1,43 @@
 'use client'
 
-import { useEffect } from 'react';
+import { useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/router';
 
 const KonamiCode = () => {
     const router = useRouter();
-    const correctCombination = [
-        "ArrowUp",    // Up
-        "ArrowUp",    // Up
-        "ArrowDown",  // Down
-        "ArrowDown",  // Down
-        "ArrowLeft",  // Left
-        "ArrowRight", // Right
-        "ArrowLeft",  // Left
-        "ArrowRight", // Right
-        "b",           // B
-        "a",           // A
-    ];
 
-    let keysPressed: string[] = [];
+    const keysPressedRef = useRef<string[]>([]); // useRef to persist the keysPressed array
 
-    const handleKeyUp = (event: KeyboardEvent) => {
-        keysPressed.push(event.key);
+    const handleKeyUp = useCallback((event: KeyboardEvent) => {
+        const correctCombination = [
+            "ArrowUp",    // Up
+            "ArrowUp",    // Up
+            "ArrowDown",  // Down
+            "ArrowDown",  // Down
+            "ArrowLeft",  // Left
+            "ArrowRight", // Right
+            "ArrowLeft",  // Left
+            "ArrowRight", // Right
+            "b",           // B
+            "a",           // A
+        ];
+
+        // Access the keysPressed array via useRef
+        keysPressedRef.current.push(event.key);
 
         // Check if the current sequence is correct so far
-        const isSequenceCorrect = keysPressed.every((key, index) => key === correctCombination[index]);
+        const isSequenceCorrect = keysPressedRef.current.every((key, index) => key === correctCombination[index]);
 
         if (isSequenceCorrect) {
-            if (keysPressed.length === correctCombination.length) {
+            if (keysPressedRef.current.length === correctCombination.length) {
                 console.log("Konami Code activated!");
-                router.push("https://portfoliojulienlegrand.vercel.app/");
-                keysPressed = []; // Reset keysPressed after success
+                // router.push("https://portfoliojulienlegrand.vercel.app/");
+                keysPressedRef.current = []; // Reset the keysPressed array after success
             }
         } else {
-            keysPressed = []; // Reset keysPressed if incorrect
+            keysPressedRef.current = []; // Reset the keysPressed array if incorrect
         }
-    };
+    }, [router]);  // No need to add correctCombination here anymore
 
     useEffect(() => {
         const keyUpListener = (event: KeyboardEvent) => handleKeyUp(event);
@@ -44,7 +46,7 @@ const KonamiCode = () => {
         return () => {
             window.removeEventListener('keyup', keyUpListener);
         };
-    }, []);
+    }, [handleKeyUp]);
 
     return null;
 };
