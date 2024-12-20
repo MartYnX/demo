@@ -26,7 +26,7 @@ const Seven: React.FC = () => {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, [windowWidth, router]);
+    }, [windowWidth, windowHeight, router]);  // Include windowHeight in the dependency array
 
     return (
         null
