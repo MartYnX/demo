@@ -1,0 +1,78 @@
+/* Améliorer l'apparence du champ de saisie Markdown (à gauche) */
+textarea {
+    font-family: 'Courier New', monospace;
+    /* Police monospacée claire et moderne */
+    font-size: 16px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    /* Bordure discrète */
+    border-radius: 8px;
+    /* Bordures arrondies pour un effet plus doux */
+    background-color: #f4f7f6;
+    /* Arrière-plan clair pour plus de contraste */
+    color: #333;
+    /* Couleur du texte plus sombre pour un meilleur contraste */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* Inclure le padding dans la largeur/hauteur totale */
+    transition: all 0.3s ease;
+    /* Transition pour des effets plus fluides */
+    overflow: hidden;
+    /* Masquer la barre de défilement par défaut */
+}
+
+textarea:focus {
+    border-color: #007bff;
+    /* Changer la bordure lorsqu'on clique dedans */
+    background-color: #fff;
+    /* Mettre un fond blanc lorsqu'on clique dedans */
+    outline: none;
+    /* Retirer le contour par défaut */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Ombre autour du champ pour indiquer le focus */
+}
+
+/* Personnalisation de la barre de défilement (visible uniquement quand nécessaire) */
+textarea::-webkit-scrollbar {
+    width: 8px;
+    /* Largeur de la barre de défilement */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    /* Couleur du "thumb" de la barre de défilement */
+    border-radius: 4px;
+    /* Coins arrondis pour le thumb */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+    /* Couleur plus foncée lorsque l'on survole */
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Arrière-plan de la zone de la barre de défilement */
+}
+
+/* Pour Firefox et autres navigateurs */
+textarea {
+    scrollbar-width: thin;
+    /* Barre de défilement plus fine */
+    scrollbar-color: #ccc #f1f1f1;
+    /* Couleurs de la barre de défilement et de la zone */
+}
+
+/* Désactiver la barre de défilement à gauche (textarea) mais permettre le défilement */
+textarea::-webkit-scrollbar {
+    display: none;
+    /* Masquer la barre de défilement */
+}
+
+textarea {
+    -ms-overflow-style: none;
+    /* Internet Explorer */
+    scrollbar-width: none;
+    /* Firefox */
+}
