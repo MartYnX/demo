@@ -1,3 +1,4 @@
+import KonamiCode from '@/libs/konami';
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -104,14 +105,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body>
+        <KonamiCode />
         {children}
       </body>
     </html>
   );
-};
+}
