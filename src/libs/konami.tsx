@@ -1,8 +1,10 @@
 'use client'
 
-import { useEffect } from 'react';;
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const KonamiCode = () => {
+    const router = useRouter();
     const correctCombination = [
         "ArrowUp",    // Up
         "ArrowUp",    // Up
@@ -27,7 +29,7 @@ const KonamiCode = () => {
         if (isSequenceCorrect) {
             if (keysPressed.length === correctCombination.length) {
                 console.log("Konami Code activated!");
-                // router.push("https://portfoliojulienlegrand.vercel.app/");
+                router.push("https://portfoliojulienlegrand.vercel.app/");
                 keysPressed = []; // Reset keysPressed after success
             }
         } else {
