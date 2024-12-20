@@ -1,45 +1,48 @@
-import { useEffect } from 'react';
+'use client'
 
-const correctCombination = [
-    38, // Up
-    38, // Up
-    40, // Down
-    40, // Down
-    37, // Left
-    39, // Right
-    37, // Left
-    39, // Right
-    66, // B
-    65, // A
-];
-
-let keysPressed: number[] = [];
-
-const handleKeyUp = (event: KeyboardEvent) => {
-    keysPressed.push(event.keyCode);
-
-    // Check if the current sequence is correct so far
-    const isSequenceCorrect = keysPressed.every((key, index) => key === correctCombination[index]);
-
-    if (isSequenceCorrect) {
-        if (keysPressed.length === correctCombination.length) {
-            console.log("Konami Code activated!");
-            // window.location.href = "https://portfoliojulienlegrand.vercel.app/";
-            keysPressed = []; // Reset keysPressed after success
-        }
-    } else {
-        keysPressed = []; // Reset keysPressed if incorrect
-    }
-};
+import { useEffect } from 'react';;
 
 const KonamiCode = () => {
+    const correctCombination = [
+        "ArrowUp",    // Up
+        "ArrowUp",    // Up
+        "ArrowDown",  // Down
+        "ArrowDown",  // Down
+        "ArrowLeft",  // Left
+        "ArrowRight", // Right
+        "ArrowLeft",  // Left
+        "ArrowRight", // Right
+        "b",           // B
+        "a",           // A
+    ];
+
+    let keysPressed: string[] = [];
+
+    const handleKeyUp = (event: KeyboardEvent) => {
+        keysPressed.push(event.key);
+
+        // Check if the current sequence is correct so far
+        const isSequenceCorrect = keysPressed.every((key, index) => key === correctCombination[index]);
+
+        if (isSequenceCorrect) {
+            if (keysPressed.length === correctCombination.length) {
+                console.log("Konami Code activated!");
+                // router.push("https://portfoliojulienlegrand.vercel.app/");
+                keysPressed = []; // Reset keysPressed after success
+            }
+        } else {
+            keysPressed = []; // Reset keysPressed if incorrect
+        }
+    };
+
     useEffect(() => {
-        window.addEventListener('keyup', handleKeyUp);
+        const keyUpListener = (event: KeyboardEvent) => handleKeyUp(event);
+        window.addEventListener('keyup', keyUpListener);
 
         return () => {
-            window.removeEventListener('keyup', handleKeyUp);
+            window.removeEventListener('keyup', keyUpListener);
         };
-    }, []); // Empty dependency array, no need to add handleKeyUp
+    }, []);
 
     return null;
 };
