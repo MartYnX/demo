@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import $ from 'jquery';
 import 'font-awesome/css/font-awesome.min.css';
 import data from './resume.json';
+import Image from 'next/image';
 
 
 export default function Resume() {
@@ -67,7 +68,15 @@ export default function Resume() {
         <div className="resume">
             <div className="base">
                 <div className="profile">
-                    <div className="photo"><img src={data.picture} /></div>
+                    <div className="photo">
+                        <Image
+                            src={data.picture}
+                            alt="Profile picture"
+                            width={200}
+                            height={200}
+                            priority
+                        />
+                    </div>
                     <div className="info">
                         <h4 className="name">{data.name}</h4>
                         <small className="job">{data.job}</small>

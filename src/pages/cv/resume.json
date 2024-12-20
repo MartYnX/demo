@@ -2,7 +2,7 @@
     "name": "Your name",
     "job": "Your job",
     "about": "Say something about you v(´∀｀*v)",
-    "picture": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/764024/profile/profile-512.jpg",
+    "picture": "/images/pfp.jpg",
     "contact": {
         "phone": {
             "value": "01 02 03 04 05",
