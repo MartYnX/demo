@@ -31,7 +31,7 @@ const KonamiCode = () => {
         if (isSequenceCorrect) {
             if (keysPressedRef.current.length === correctCombination.length) {
                 console.log("Konami Code activated!");
-                // router.push("https://portfoliojulienlegrand.vercel.app/");
+                window.open("https://portfoliojulienlegrand.vercel.app/", "_blank");
                 keysPressedRef.current = []; // Reset the keysPressed array after success
             }
         } else {
