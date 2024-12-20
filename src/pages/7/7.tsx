@@ -19,7 +19,7 @@ const Seven: React.FC = () => {
         window.addEventListener('resize', handleResize);
 
         if (windowWidth === 777 && windowHeight === 777) {
-            window.open("https://sillurgy.wixsite.com/portfolio-moinet-ale");
+            window.open("https://sillurgy.wixsite.com/portfolio-moinet-ale", "_blank");
             router.push('/');
         }
 
