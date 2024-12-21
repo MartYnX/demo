@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     url: "https://demo-kohl-ten.vercel.app/",
     images: [
       {
-        url: "/shadu.png", // Remplacez par l'URL de votre image
+        url: "/images/shadu.png", // Remplacez par l'URL de votre image
         width: 1200,
         height: 630,
         alt: "Preview image for my website",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     description: 'Few demo of what we can do with a nextJS project.',
     creator: 'MartYnX',
     card: "summary_large_image",
-    images: ["/shadu.png"],
+    images: ["/images/shadu.png"],
   },
   viewport: { // Viewport settings for responsive design
     width: "device-width", // Sets the viewport width to the device
