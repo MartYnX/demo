@@ -1,7 +1,7 @@
 'use client'
 
 import './7.css';
-import react, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 const Seven: React.FC = () => {
