@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { isBase64 } from "./types/isBase64";
 import { isHexadecimal } from "./types/isHexadecimal";
 import { isROT13 } from "./types/isROT13";

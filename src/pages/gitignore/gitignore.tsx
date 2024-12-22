@@ -14,8 +14,12 @@ const GitignoreViewer: React.FC = () => {
                 }
                 const content = await response.text();
                 setGitignoreContent(content);
-            } catch (err: any) {
-                setError(err.message);
+            } catch (err: unknown) { // Remplacer any par unknown
+                if (err instanceof Error) {
+                    setError(err.message);
+                } else {
+                    setError("Une erreur inconnue s'est produite.");
+                }
             }
         };
 

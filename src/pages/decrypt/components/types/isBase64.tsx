@@ -5,7 +5,7 @@ export const isBase64 = (msg: string): string | boolean => {
         try {
             const decoded = atob(msg);
             return decoded;  // Retourner le texte décodé
-        } catch (e) {
+        } catch {
             return "Erreur lors du décodage Base64.";
         }
     }

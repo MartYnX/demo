@@ -7,7 +7,7 @@ export const isHexadecimal = (msg: string): string | boolean => {
                 .map((byte) => String.fromCharCode(parseInt(byte, 16)))
                 .join("");
             return decoded;  // Retourner le texte décodé
-        } catch (e) {
+        } catch {
             return false;
         }
     }
